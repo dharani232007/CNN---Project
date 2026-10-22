@@ -1,0 +1,43 @@
+# Convolutional Neural Network (CNN) Project
+
+## Overview
+This project demonstrates the fundamental concepts of Convolutional Neural Networks (CNNs) by building an image classification model from scratch. The model is built using TensorFlow and Keras, and it is trained to recognize and classify images from the CIFAR-10 dataset into 10 distinct categories.
+
+This repository serves as an educational introduction to computer vision, showcasing how a neural network processes raw pixel data (RGB), extracts visual features using filters (kernels), and makes accurate predictions.
+
+## Dataset
+This project uses the **CIFAR-10 dataset**, which consists of 60,000 32x32 color (RGB) images spanning 10 different classes:
+* Airplanes
+* Cars
+* Birds
+* Cats
+* Deer
+* Dogs
+* Frogs
+* Horses
+* Ships
+* Trucks
+
+The data is split into 50,000 training images and 10,000 testing images.
+
+## Model Architecture
+The CNN follows a standard deep learning extraction-to-classification flow:
+1. **Convolutional Layers (Conv2D):** Applies 3x3 kernels across the image to detect edges, patterns, and complex shapes. Uses ReLU (Rectified Linear Unit) activation to introduce non-linearity.
+2. **Pooling Layers (MaxPooling2D):** Downsamples the feature maps using a 2x2 grid, reducing computational load and isolating the most prominent features.
+3. **Flatten Layer:** Converts the final 3D feature maps into a 1D array.
+4. **Fully Connected Layers (Dense):** A standard neural network classifier that processes the flattened features and outputs probabilities for the 10 target classes.
+
+## Tech Stack
+* **Language:** Python
+* **Framework:** TensorFlow / Keras
+* **Data Visualization:** Matplotlib
+* **Environment:** Google Colab
+
+## How to Run This Project
+1. Open [Google Colab](https://colab.research.google.com/).
+2. Create a new notebook or import the `CNN_project.ipynb` file from this repository.
+3. Ensure you are using a GPU runtime for faster training (**Runtime > Change runtime type > T4 GPU**).
+4. Run the cells sequentially to load the data, compile the model, and begin training.
+
+## Results
+After training for 10 epochs, the model outputs a graph comparing Training Accuracy vs. Validation Accuracy, allowing you to visualize how well the network learned to generalize unseen images.
