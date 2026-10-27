@@ -96,8 +96,10 @@ Text data| LSTM sentiment classification
 
 🚀 How to Run
 
-1. Open "Google Colab" (https://colab.research.google.com/).
-2. Open the relevant experiment notebook from this repository.
+1. Open "Google Colab" 
+CNN Experiment - (https://colab.research.google.com/drive/1e-DTP8k9kg13Crscgehq9FDX_1PFpxcg?usp=sharing)
+RNN Experiment - (https://colab.research.google.com/drive/1OsdJoAJQNHUllAFUWvhp5QBEjqLEkZfZ?usp=sharing).
+2. Open the relevant experiment notebook from this repository.o
 3. Select a suitable runtime. A GPU may accelerate CNN training when available.
 4. Execute the notebook cells sequentially.
 5. Observe the model outputs, evaluation metrics, and visualizations.
